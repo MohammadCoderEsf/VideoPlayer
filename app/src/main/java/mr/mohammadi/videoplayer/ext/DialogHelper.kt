@@ -20,13 +20,17 @@ object DialogHelper {
         val edtTextTitle: TextView = dialog.findViewById(R.id.edtTextTitle)
         val edtTextDetail: TextView = dialog.findViewById(R.id.edtTextDetail)
 
+        //بستن دیالوگ وقتی روی img خروج ضربه زده شد
         imgExitCircleDialog.setOnClickListener {
             dialog.dismiss()
         }
 
+        //ابتدا بک گراند دیالوگ را ترنسپرنت میکنیم تا بک گرند مد نظر ما به درستی ست شود
         dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
+        //نمایش دیالوگ
         dialog.show()
 
+        //ارسال پیام مد نظر
         btnSendTextToTelegram.setOnClickListener {
             val txtTitle = edtTextTitle.text.toString()
             val txtDetail = edtTextDetail.text.toString()

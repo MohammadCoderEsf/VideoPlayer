@@ -59,7 +59,7 @@ class PlayFinalActivity : AppCompatActivity(), PlayFinalContract.View {
             navigateToPreviousActivity()
         }
 
-        //باز کردن دیالوگ و ارسال متن های کاربر به ربات نوتفیکیتور با کمک یک آبجکت که بعدا توضیح میدهیم
+        //باز کردن دیالوگ و ارسال متن های کاربر به ربات نوتفیکیتور با کمک یک آبجکت که DialogHelper انجام میشود ( به ابجکت بروید تا کامنت گذاری ان را بخوانید)
         binding.supportTicket.setOnClickListener {
             DialogHelper.showSupportTicketDialog(this)
         }
